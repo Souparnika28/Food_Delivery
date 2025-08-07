@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const OrderSuccess = () => {
+function OrderSuccess() {
   return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h2>🎉 Order Placed Successfully!</h2>
-      <p>Thank you for ordering. Your food is on the way 🍽</p>
+    <div>
+      <h1>Order Placed Successfully!</h1>
+      <p>Thank you for your order.</p>
+      <Link to="/">Back to Home</Link>
     </div>
   );
-};
+}
 
-export default OrderSuccess;
+export default OrderSuccess;
